@@ -1,2 +1,2 @@
 # HireSpace
-your hiring portal
+your hiring portal to get hired
