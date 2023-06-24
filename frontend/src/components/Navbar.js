@@ -12,10 +12,10 @@ const Navbar = () => {
         <CustomLink to="/Findjobs">Find Jobs</CustomLink>
         <CustomLink to="/BrowseCompany">Browse Company</CustomLink>
       </ul>
-      <ul className="logsig"> 
+      {/* <ul className="logsig"> 
         <CustomLink to="/Findjobs">Find Jobs</CustomLink>
         <CustomLink to="/BrowseCompany">Browse Company</CustomLink>
-      </ul>
+      </ul> */}
     </nav>
   )
 }

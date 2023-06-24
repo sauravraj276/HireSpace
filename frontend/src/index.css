@@ -54,14 +54,23 @@ code {
   display: flex;
   align-items: center;
   padding: .25rem;
+  font-weight: 600;
 }
 
-.nav li.active {
-  background-color: #708bb6;
+
+.nav li:hover,
+.nav li.active  {
+  color: #5171a4;
 }
 
-.nav li:hover {
-  background-color: #5171a4;
+.nav li.active::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #708bb6;
+  position: absolute;
+
+
 }
 
 .nav ul ul .logsig{
