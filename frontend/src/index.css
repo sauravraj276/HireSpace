@@ -24,9 +24,10 @@ code {
   text-align: center;
 }
 
+
 .nav {
-  background-color: #44828d;
-  color: white;
+  background-color: #edeefc;
+  color: rgb(28, 26, 26);
   display: flex;
   justify-content:left;
   align-items: stretch;
@@ -34,8 +35,8 @@ code {
 }
 
 .site-title {
-  font-size: 2rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
+  margin-left: 10%;
 }
 
 .nav ul {
@@ -56,9 +57,13 @@ code {
 }
 
 .nav li.active {
-  background-color: #4b7c79;
+  background-color: #708bb6;
 }
 
 .nav li:hover {
-  background-color: #214643;
+  background-color: #5171a4;
+}
+
+.nav ul ul .logsig{
+  justify-content:right;
 }

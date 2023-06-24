@@ -1,13 +1,18 @@
 import React from 'react'
+import navbar_logo from '../navbar_logo.svg';
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 const Navbar = () => {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        Site Name
+      <img src={navbar_logo} alt="Logo" width="151.1" height="50.2" padding="0"/> 
       </Link>
-      <ul>
+      <ul> 
+        <CustomLink to="/Findjobs">Find Jobs</CustomLink>
+        <CustomLink to="/BrowseCompany">Browse Company</CustomLink>
+      </ul>
+      <ul className="logsig"> 
         <CustomLink to="/Findjobs">Find Jobs</CustomLink>
         <CustomLink to="/BrowseCompany">Browse Company</CustomLink>
       </ul>
