@@ -7,6 +7,10 @@ import Footer from './components/Footer';
 import FeaturedJob from './components/FeaturedJob';
 import Findjobs from './components/Findjobs';
 import BrowseCompany from './components/BrowseCompany';
+import Student from './components/User/User-Auth/Login';
+import Company from './components/Company/Company-auth/LoginE';
+import StudentSignUp from './components/User/User-Auth/Signup';
+import CompanySignUp from './components/Company/Company-auth/SignupE';
 function App() {
 
   return (
@@ -20,6 +24,10 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/Findjobs" element={<Findjobs />} />
               <Route path="/BrowseCompany" element={<BrowseCompany />} />
+              <Route path="/Student" element={<Student />} />
+              <Route path="/Company" element={<Company />} />
+              <Route path="/StudentSignUp" element={<StudentSignUp />} />
+              <Route path="/CompanySignUp" element={<CompanySignUp />} />
             </Routes>
         </Router>
       </div>

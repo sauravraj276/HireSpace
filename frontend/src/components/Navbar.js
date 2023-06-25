@@ -12,15 +12,23 @@ const Navbar = () => {
         <CustomLink to="/Findjobs">Find Jobs</CustomLink>
         <CustomLink to="/BrowseCompany">Browse Company</CustomLink>
       </ul>
-      {/* <ul className="logsig"> 
-        <CustomLink to="/Findjobs">Find Jobs</CustomLink>
-        <CustomLink to="/BrowseCompany">Browse Company</CustomLink>
-      </ul> */}
+      <ul className="dropdown"> 
+      <button class="dropbtn">Login</button>
+          <div class="dropdown-content">
+          <CustomLink to="/Student">Student</CustomLink>
+          <CustomLink to="/Company">Company</CustomLink>
+          </div>
+      </ul>
+      <ul className="dropdown"> 
+      <button class="dropbtn1">SignUp</button>
+          <div class="dropdown-content">
+          <CustomLink to="/StudentSignUp">Student</CustomLink>
+          <CustomLink to="/CompanySignUp">Company</CustomLink>
+          </div>
+      </ul>
     </nav>
   )
 }
-
-
 
 
 function CustomLink({ to, children, ...props }) {
