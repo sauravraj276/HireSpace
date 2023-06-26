@@ -36,8 +36,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" />  
       </header>
-
+      
+      <Router>
       <FeaturedJob/>
+      </Router>
       <Router>
       <Footer/>
       </Router>

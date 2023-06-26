@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+.container_f{
+    background: #e4e4f8;
+    padding:15px 9%;  
+}
+
+.container_f .heading0{
+    text-align: left;
+    padding-bottom: 10px;
+    font-family: 'Roc-Grotesk';
+    font-size: 42px;
+}
+
+.container_f .box-container_f{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.box_f{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    padding:30px 20px;
+}
+
+.box_f img{
+    float: left;
+    height: 40px;
+    margin-left: 2%;
+}
+
+.btn_f{
+    float:right;
+    font-size: 12px;
+    color: #4640DE;
+    border:5px solid #4640DE;
+    border-width: thin;
+    width: 65px;
+    height: 26px;
+    padding: 5px;
+}
+.box_f p{
+    text-align: left;
+    justify-content: left;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.job{
+    text-align: left;
+    justify-content: left;
+    text-decoration: none;
+    color:#25324B;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+a{
+    color:#25324B;
+}
+.p{
+    text-align: left;
+    font-weight: 400;
+    line-height:1.5cm;
+}
+.container_f .box-container_f .box_f p p{
+    font-weight: 300;
+}
+.btn_f0{
+    float: left;
+    align-items: center;
+    background-color: #de8c40;
+    color:#9a4d05;
+    border:5px solid;
+    border-width: thin;
+    border-radius: 30px;
+    width: 100px;
+    height: 35px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.container_f .box-container_f .box_f:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+
+@media (max-width:768px){
+    .container_f{
+        padding:15px;
+    }
+}
