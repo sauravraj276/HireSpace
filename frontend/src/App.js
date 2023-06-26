@@ -11,6 +11,7 @@ import Student from './components/User/User-Auth/Login';
 import Company from './components/Company/Company-auth/LoginE';
 import StudentSignUp from './components/User/User-Auth/Signup';
 import CompanySignUp from './components/Company/Company-auth/SignupE';
+import About from './components/About';
 function App() {
 
   return (
@@ -37,7 +38,10 @@ function App() {
       </header>
 
       <FeaturedJob/>
+      <Router>
       <Footer/>
+      </Router>
+      
 
     </div>
   );

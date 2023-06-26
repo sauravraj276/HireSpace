@@ -19,13 +19,13 @@ code {
 
                         /* navbar design */
 
-.container {
-  /* margin: 1rem; */
+/* .container {
+  
   text-align: center;
-}
+} */
 
 
-.nav {
+/* .nav {
   background-color: #edeefc;
   color: rgb(28, 26, 26);
   display: flex;
@@ -76,12 +76,12 @@ code {
 
 .nav ul ul .logsig{
   justify-content:right;
-}
+} */
 
 
 /* login-signup css */
 
-.dropbtn {
+/* .dropbtn {
   background-color: #c3c6f1;
   color: rgb(28, 26, 26);
   padding: 16px;
@@ -100,18 +100,18 @@ code {
   cursor: pointer;
   margin-left: 10px;
   
-}
+} */
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+/* .dropdown {
   position: relative;
   display: inline-block;
   
 
-}
+} */
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -119,29 +119,29 @@ code {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 
-}
+} */
 
 /* Links inside the dropdown */
-.dropdown-content a {
+/* .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
  text-align: left;
  
-}
+} */
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+/* .dropdown-content a:hover {
   background-color: #f1f1f1
-}
+} */
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+/* .dropdown:hover .dropbtn {
   background-color: #c3cbe8;
-}
+} */
