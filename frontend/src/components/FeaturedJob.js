@@ -6,7 +6,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 const FeaturedJob = () => {
   return (
     <div className="container_f">
-        <h3 className="heading0">Featured jobs</h3>
+        <h3 className="heading0">Featured<span style={{ color: '#26A4FF' }}> jobs</span></h3>
         <div className="box-container_f">
             <div className="box_f">
                 <img src={icon} alt="icon" />
