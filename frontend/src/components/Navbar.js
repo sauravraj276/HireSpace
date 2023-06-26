@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../style/navbar_style.css';
-
 import navbar_logo from '../navbar_logo.svg';
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
