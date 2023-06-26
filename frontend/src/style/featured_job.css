@@ -93,4 +93,8 @@ a{
     .container_f{
         padding:15px;
     }
+    .p{
+        
+        line-height:.75cm;
+    }
 }

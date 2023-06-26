@@ -35,7 +35,7 @@ ul{
 	font-weight: 500;
 	position: relative;
 }
-.footer-col h4::before{
+/* .footer-col h4::before{
 	content: '';
 	position: absolute;
 	left:0;
@@ -44,12 +44,15 @@ ul{
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
-}
+} */
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
 .footer-col ul li a{
+	margin-left: 33%;
+	text-align: start;
 	font-size: 16px;
+	position: relative;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
@@ -104,10 +107,18 @@ ul{
     width: 50%;
     margin-bottom: 30px;
 }
+.footer-col ul li a{
+	text-align: center;
+	margin-left: 0;
+}
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+}
+.footer-col ul li a{
+	text-align:center;
+	margin-left: 0;
 }
 }
 
