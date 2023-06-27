@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import "../style/featured_job.css";
 import icon from "../style/icon-1.png";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const FeaturedJob = () => {
 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url('color.css');
 
 .container_f{
     background: #e4e4f8;
@@ -26,7 +26,7 @@
     flex-direction: column;
     /* box-shadow: 0 5px 10px rgba(0,0,0,.2); */
     border-radius: 2px;
-    background: #fff;
+    background: var(--C5);
     padding:30px 20px;
 }
 
@@ -39,8 +39,8 @@
 .btn_f{
     float:right;
     font-size: 16px;
-    color: #4640DE;
-    border:5px solid #4640DE;
+    color: var(--C4);
+    border:5px solid var(--C4);
     border-width: thin;
     padding: 5px;
 }
@@ -52,7 +52,7 @@
 .job{
     text-decoration: none;
     text-align: start;
-    color:#25324B;
+    color:var(--C1);
     font-size: 20px;
     font-weight: 500;
     margin-top: 10%;
@@ -60,7 +60,7 @@
     
 }
 a{
-    color:#25324B;
+    color:var(--C1);
 }
 .p{
     justify-content: flex-start;
@@ -69,7 +69,7 @@ a{
     padding-top: 1%;
     letter-spacing: normal;
     line-height:.75cm;
-    color: #8D93A1;
+    color: var(--C6);
 }
 .para{
     float: left;
@@ -78,13 +78,13 @@ a{
     font-weight: 300;
     margin-top: 8%;
     margin-bottom: 3%;
-    color: #9DA3AE;
+    color: var(--C7);
 }
 
 .btn_f0{
     float: left;
-    background-color: #FDF3EB;
-    color:#e59711;
+    background-color: var(--C8);
+    color:var(--C9);
     border:5px solid;
     border-width: thin;
     border-radius: 30px;
@@ -94,8 +94,8 @@ a{
 }
 
 .btn_f01{
-    background-color: #EEFAF7;
-    color:#56CDAD;
+    background-color: var(--C10);
+    color:var(--C11);
 }
 
 .container_f .box-container_f .box_f:hover{
