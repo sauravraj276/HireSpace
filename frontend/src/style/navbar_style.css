@@ -7,7 +7,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
+
 /* logo and navlinks of 1st section */
 .first-section {
   display: flex;
@@ -16,6 +18,21 @@
   align-items: center;
 }
 
+.logo {
+  margin-right: 40px;
+}
+
+.first-section li a {
+  font: var(--t2);
+  color: var(--C1);
+  margin: 10px;
+  padding-bottom: 25px;
+}
+
+.first-section li:hover a {
+  color: var(--C13);
+  border-bottom: 5px solid var(--C13);
+}
 
 /* Login Signup dropdown class */
 .second-section {
@@ -27,28 +44,47 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  
 }
 
-.dropbtn{
-	padding: 10px;
-	height: 40px;
-	background-color: var(--C5);
-	font: var(--t1);
-	color: var(--C4);
+.dropbtn {
+  width: 125px;
+  background-color:var(--C15); 
+  padding: 5px;
+  height: 50px;
+  font: var(--t2);
+  color: var(--C5);
+  margin-left: 2.5px;
+  margin-right: 2.5px;
 }
-
 
 .dropdown-content {
-	
+  width: 125px;
+  margin-left: 2.5px;
   display: none;
   position: absolute;
   z-index: 1;
+  background-color:var(--C15);
+  font: var(--t1);
+  text-align: start;
+  
+
 }
+
+.dropdown-content div{
+  border-top:solid 2px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.dropdown-content a{
+  color: var(--C5);
+  padding-left: 10px;
+}
+
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .dropdown:hover .dropbtn {
-	background-color: var(--C4);
-	color: var(--C5);
+  background-color: var(--C13);
+
 }

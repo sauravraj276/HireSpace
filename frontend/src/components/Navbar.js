@@ -14,12 +14,12 @@ function Navbar() {
   };
 
   return (
-    
+
     <header className="navbar" >
       <div className="first-section">
         <div className="logo">
           <Link to="/">
-            <img src={navbar_logo} alt="Logo" width="151.1" height="50.2" />
+            <img src={navbar_logo} alt="Logo" width="308" height="59" />
           </Link>
         </div>
         <CustomLink to="/Findjobs" >Find Jobs</CustomLink>
@@ -31,8 +31,9 @@ function Navbar() {
           <button className="dropbtn">Login
           </button>
           <div className="dropdown-content">
-            <CustomLink to="/Student">Student</CustomLink>
-            <CustomLink to="/Company">Company</CustomLink>
+          <div><CustomLink to="/Student">Student</CustomLink></div>
+            <div>  <CustomLink to="/Company">Company</CustomLink>
+            </div>
           </div>
         </div>
 
@@ -40,11 +41,11 @@ function Navbar() {
 
         <li className="dropdown">
           <button className="dropbtn ">Sign Up
-            <i className="fa fa-caret-down"></i>
           </button>
           <div className="dropdown-content">
-            <CustomLink to="/StudentSignUp">Student</CustomLink>
-            <CustomLink to="/CompanySignUp">Company</CustomLink>
+          <div><CustomLink to="/Student">Student</CustomLink></div>
+            <div>  <CustomLink to="/Company">Company</CustomLink>
+            </div>
           </div>
         </li>
 
