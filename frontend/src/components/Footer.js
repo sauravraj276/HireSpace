@@ -3,6 +3,7 @@ import navbar_logo from '../navbar_logo.svg';
 import '../style/footer_style.css';
 import { Link } from "react-router-dom";
 
+
 const Footer=()=> {
   return (
     <>
