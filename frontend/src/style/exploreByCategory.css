@@ -84,13 +84,10 @@ a{
     color: var(--C7);
 }
 
-
-
 .container0 .box-container0 .box0:hover{
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
 
 }
-
 
 @media (max-width:768px){
     .container0{
