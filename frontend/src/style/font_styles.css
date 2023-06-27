@@ -9,5 +9,5 @@ e.g. font: italic small-caps bold 12px/30px Georgia, serif;
 
 :root{
     --t1: normal 20px Roboto, sans-serif;
-    --t2: bold 20px sans-serif;
+    --t2: bold 25px sans-serif;
 }
