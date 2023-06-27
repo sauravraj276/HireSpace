@@ -1,0 +1,13 @@
+/* font shothand */
+/* font-style
+font-variant
+font-weight
+font-size/line-height
+font-family 
+e.g. font: italic small-caps bold 12px/30px Georgia, serif;
+*/
+
+:root{
+    --t1: 700 20px Roboto, sans-serif;
+    --t2: normal 20px sans-serif;
+}
