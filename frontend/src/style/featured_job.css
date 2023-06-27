@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url('color.css');
 
 .container_f{
     background: #e4e4f8;
@@ -8,6 +8,7 @@
 
 .container_f .heading0{
     text-align: left;
+    margin-bottom: 2%;
     padding-bottom: 10px;
     font-family: 'Roc-Grotesk';
     font-size: 42px;
@@ -16,13 +17,16 @@
 .container_f .box-container_f{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap:15px;
+    gap:33px;
 }
 
 .box_f{
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    border-radius: 5px;
-    background: #fff;
+    display: flexbox;
+    justify-self: flex-start;
+    flex-direction: column;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,.2); */
+    border-radius: 2px;
+    background: var(--C5);
     padding:30px 20px;
 }
 
@@ -34,53 +38,64 @@
 
 .btn_f{
     float:right;
-    font-size: 12px;
-    color: #4640DE;
-    border:5px solid #4640DE;
+    font-size: 16px;
+    color: var(--C4);
+    border:5px solid var(--C4);
     border-width: thin;
-    width: 65px;
-    height: 26px;
     padding: 5px;
 }
 .box_f p{
-    text-align: left;
-    justify-content: left;
     font-size: 16px;
     font-weight: 300;
 }
 
 .job{
-    text-align: left;
-    justify-content: left;
     text-decoration: none;
-    color:#25324B;
+    text-align: start;
+    color:var(--C1);
     font-size: 20px;
     font-weight: 500;
+    margin-top: 10%;
+    padding-top: 2%;
     
 }
 a{
-    color:#25324B;
+    color:var(--C1);
 }
 .p{
-    text-align: left;
+    justify-content: flex-start;
+    float: left;
     font-weight: 400;
-    line-height:1.5cm;
+    padding-top: 1%;
+    letter-spacing: normal;
+    line-height:.75cm;
+    color: var(--C6);
 }
-.container_f .box-container_f .box_f p p{
+.para{
+    float: left;
+    justify-content: flex-start;
+    text-align: start;
     font-weight: 300;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    color: var(--C7);
 }
+
 .btn_f0{
     float: left;
-    align-items: center;
-    background-color: #de8c40;
-    color:#9a4d05;
+    background-color: var(--C8);
+    color:var(--C9);
     border:5px solid;
     border-width: thin;
     border-radius: 30px;
-    width: 100px;
-    height: 35px;
     margin: 5px;
-    padding: 5px;
+    padding:2px 17px 2px 17px;
+    font-weight: 500;
+}
+
+.btn_f01{
+    background-color: var(--C10);
+    color:var(--C11);
 }
 
 .container_f .box-container_f .box_f:hover{
