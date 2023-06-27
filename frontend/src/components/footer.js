@@ -7,7 +7,7 @@ const Footer=()=> {
   return (
     <>
     <footer className="footer">
-  	 <div className="container">
+  	 <div className="container container1">
   	 	<div className="row">
 		   <div className="footer-col" id="right">
 		   <Link to="/">

@@ -4,8 +4,6 @@ import navbar_logo from '../navbar_logo.svg';
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 
-
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +17,7 @@ function Navbar() {
       <div className="first-section">
         <div className="logo">
           <Link to="/">
-            <img src={navbar_logo} alt="Logo" width="308" height="59" />
+            <img src={navbar_logo} alt="Logo" width="200" height="59" />
           </Link>
         </div>
         <CustomLink to="/Findjobs" >Find Jobs</CustomLink>
@@ -32,7 +30,7 @@ function Navbar() {
           </button>
           <div className="dropdown-content">
           <div><CustomLink to="/Student">Student</CustomLink></div>
-            <div>  <CustomLink to="/Company">Company</CustomLink>
+            <div> <CustomLink to="/Company">Company</CustomLink>
             </div>
           </div>
         </div>
@@ -44,8 +42,7 @@ function Navbar() {
           </button>
           <div className="dropdown-content">
           <div><CustomLink to="/Student">Student</CustomLink></div>
-            <div>  <CustomLink to="/Company">Company</CustomLink>
-            </div>
+          <div><CustomLink to="/Company">Company</CustomLink></div>
           </div>
         </li>
 

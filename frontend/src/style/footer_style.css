@@ -6,6 +6,10 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+.container1{
+	max-width: 1170px;
+	margin:auto;
+}
 ul{
 	list-style: none;
 }
@@ -46,7 +50,11 @@ ul{
 	color: var(--C5);
 	padding-left: 8px;
 }
-
+.footer p{
+	font-size: 15px;
+	line-height: 0.55cm;
+	text-align: start;
+}
 #right{
 	
 		color: var(--C5);
