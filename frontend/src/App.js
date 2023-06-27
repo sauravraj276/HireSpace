@@ -34,10 +34,6 @@ function App() {
         </Router>
       </div>
       
-      <header className="App-header">
-        <img src={logo} className="App-logo" />  
-      </header>
-      
       <Router>
       <ExploreByCategory/>
       </Router>
