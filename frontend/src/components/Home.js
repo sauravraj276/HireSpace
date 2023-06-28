@@ -8,7 +8,9 @@ const Home = () => {
     <>
     <header className="App-header">
         <img src={logo} className="App-logo" alt='logo' />  
-       <Link to="/"> <button className="dropbtn ">Get Job</button></Link>
+       <Link to="/"> 
+       <button className="dropbtn">Get Job</button>
+       </Link>
       </header>
       
     </>

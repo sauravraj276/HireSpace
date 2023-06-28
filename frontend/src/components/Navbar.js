@@ -41,8 +41,8 @@ function Navbar() {
           <button className="dropbtn ">Sign Up
           </button>
           <div className="dropdown-content">
-          <div><CustomLink to="/Student">Student</CustomLink></div>
-          <div><CustomLink to="/Company">Company</CustomLink></div>
+          <div><CustomLink to="/StudentSignUp">Student</CustomLink></div>
+          <div><CustomLink to="/CompanySignUp">Company</CustomLink></div>
           </div>
         </li>
 
