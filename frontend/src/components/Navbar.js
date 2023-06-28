@@ -29,7 +29,7 @@ function Navbar() {
           <button className="dropbtn">Login
           </button>
           <div className="dropdown-content">
-          <div><CustomLink to="/Student">Student</CustomLink></div>
+            <div><CustomLink to="/Candidate">Candidate</CustomLink></div>
             <div> <CustomLink to="/Company">Company</CustomLink>
             </div>
           </div>
@@ -41,59 +41,11 @@ function Navbar() {
           <button className="dropbtn ">Sign Up
           </button>
           <div className="dropdown-content">
-          <div><CustomLink to="/Student">Student</CustomLink></div>
-          <div><CustomLink to="/Company">Company</CustomLink></div>
+            <div><CustomLink to="/CandidateSignUp">Candidate</CustomLink></div>
+            <div><CustomLink to="/CompanySignUp">Company</CustomLink></div>
           </div>
         </li>
-
-
       </div>
-
-
-
-
-      {/* <div className="container">
-        <div className="row align-items-center justify-content-between">
-
-          <div className="logo">
-            <Link to="/">
-              <img src={navbar_logo} alt="Logo" width="151.1" height="50.2" padding="0" />
-            </Link>
-          </div>
-
-          <button className={`nav-toggler ${isOpen ? 'active' : ''}`} onClick={navToggle}>
-          </button>
-
-          <nav className={`nav ${isOpen ? 'open' : ''}`} style={isOpen ? { maxHeight: '100%' } : {}}>
-            <ul>
-
-              <li><CustomLink to="/Findjobs">Find Jobs</CustomLink></li>
-              <li><CustomLink to="/BrowseCompany">Browse Companies</CustomLink></li>
-
-              <li className="dropdown">
-                <button className="dropbtn">Login
-                  <i className="fa fa-caret-down"></i>
-                </button>
-                <div className="dropdown-content">
-                  <CustomLink to="/Student">Student</CustomLink>
-                  <CustomLink to="/Company">Company</CustomLink>
-                </div>
-              </li>
-
-              <li className="dropdown">
-                <button className="dropbtn">Sign Up
-                  <i className="fa fa-caret-down"></i>
-                </button>
-                <div className="dropdown-content">
-                  <CustomLink to="/StudentSignUp">Student</CustomLink>
-                  <CustomLink to="/CompanySignUp">Company</CustomLink>
-                </div>
-              </li>
-
-            </ul>
-          </nav>
-        </div>
-      </div> */}
     </header>
   )
 }
