@@ -77,6 +77,9 @@
   border-top:solid 2px rgba(0, 0, 0, 0.2);
   padding: 5px;
 }
+.dropdown-content div:hover{
+  background-color:var(--C13); 
+}
 
 .dropdown-content a{
   color: var(--C5);
