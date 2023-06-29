@@ -4,7 +4,8 @@
 
 
 .container0{
-    background: #e4e4f8;
+    margin-top: 10px;
+    background: var(--C14);
     padding:15px 9%;  
 }
 .container0 .heading1{
