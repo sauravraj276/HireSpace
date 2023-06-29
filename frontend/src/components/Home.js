@@ -1,15 +1,21 @@
 import React from 'react';
-import logo from '../logo.svg';
+import logo from '../images/logo.png';
+import bg from '../images/bg.png'
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-
+import '../style/home.css'
 const Home = () => {
     return (
     // <h1>Jai Shree Ram</h1>
     <>
-    <header className="App-header">
-        <img src={logo} className="App-logo" alt='logo' />  
-       <Link to="/"> <button className="dropbtn ">Get Job</button></Link>
-      </header>
+        <div className="container-home">
+             <div className='left-home'>
+                <img src={bg} className="App-logo" alt='logo' /> 
+            </div> 
+           {/* <div className="right-home">
+                {/* <img src={bg} className="App-logo" alt='logo' />   
+            </div> */}
+
+        </div>
       
     </>
     );

@@ -1,0 +1,37 @@
+@import url(color.css);
+@import url(reset.css);
+@import url(font_styles.css);
+
+ 
+.left-login{
+    height: 100%;
+}
+.left-login img{
+    height: 560px;
+    /* width: fit-content; */
+}
+
+.right-login{
+    background-color: var(--C15);
+    box-shadow:5px 10px 18px #888888 ;
+    border-radius: 7px;
+    height: 370px;
+    width: 340px;
+    margin-left: 15%;
+}
+
+.form-title-login{  
+    margin-top: 8%;
+}
+
+@media screen and (max-width:888px) {
+    .forms-container{
+        grid-template-columns: 1fr;
+    }
+    .left-login{
+        display:none;
+    }
+    .right-login{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,108 @@
+@import url(color.css);
+@import url(reset.css);
+@import url(font_styles.css);
+
+
+.container-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+ .forms-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+} 
+
+.right{
+    height: 100%;
+} 
+.right img{
+    height: 560px;
+    width: fit-content;
+}
+
+.left{
+    height: 440px;
+    width: 340px;
+    margin-left: 2%;
+    padding: 25px 10px;
+    background-color: var(--C15);
+    box-shadow:5px 10px 18px #888888 ;
+    border-radius: 7px;
+}
+
+.form-title{  
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 27px;
+    font-family: var(--t2);
+    font-weight: 600;
+    color: var(--C5);
+}
+
+
+.form-field{
+    width: 80%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: var(--C5);
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.form-field0{
+        float: inline-start;
+        padding: 10px;
+        padding-top: 0;
+        font-size: 15px;
+}
+.form-field1{
+    float: inline-start;
+    padding: 10px;
+    margin: 5px;
+    
+}
+.signup-icon img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    padding-top: 0;
+}
+.form-field:hover{
+    background-color: var(--C8);
+}
+.form-field:focus{
+    background-color: var(--C10);
+}
+
+.btn-signup{
+        width: 80%;
+        background-color:var(--C13); 
+        padding: 5px;
+        height: 45px;
+        font: var(--t2);
+        color: var(--C1);
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        border-radius: 7px;
+}
+.btn-signup:hover{
+    background-color: var(--C3);
+}
+
+
+
+@media screen and (max-width:888px) {
+    .forms-container{
+        grid-template-columns: 1fr;
+    }
+    .right{
+        display:none;
+    }
+}
