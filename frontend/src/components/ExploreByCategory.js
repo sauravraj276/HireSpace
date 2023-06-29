@@ -89,23 +89,24 @@ const ExploreByCategory = () => {
       <>
         <div className="box0" key={curElem.id}>
 
-          <div>
-            <img src={icon} alt="icon" />
-          </div>
+            <div>
+              <img src={icon} alt="icon" />
+            </div>
 
-          <div>
-            <div className="job0">
-              <Link to="#">{curElem.name}</Link>
-            </div>
-          </div>
-        <div className="arrow">
-          <div className="para0">
-            <p>
-            {curElem.number}  {curElem.description}
-            </p>
-            </div>
-            <img src={arrow} alt="icon" />
-        </div>    
+              <div className="job0">
+                <Link to="#">{curElem.name}</Link>
+              </div>
+  
+          <div className="desc">
+                <div className="para0">
+                  <p>
+                  {curElem.number}  {curElem.description}
+                  </p>
+                </div>
+                <div className="arrow">
+                  <img src={arrow} alt="icon" />
+                </div>
+          </div>    
         </div>
 
       </>
