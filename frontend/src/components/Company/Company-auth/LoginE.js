@@ -1,5 +1,5 @@
 import React from 'react';
-import login from '../../../images/login.png';
+import login from '../../../images/signup.png';
 import google from  '../../../images/google.svg';
 import linkedin from  '../../../images/linkedin.svg';
 import '../../../style/login.css';

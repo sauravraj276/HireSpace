@@ -80,7 +80,7 @@ const ExploreByCategory = () => {
     <>
     <div className="container0">
       <h3 className="heading1">
-        Explore by<span style={{ color: "#26A4FF" }}> category</span>
+        Explore by<span style={{ color: "#3A90C0" }}> category</span>
       </h3>
       <div className="box-container0">
 
