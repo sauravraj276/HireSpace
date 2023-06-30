@@ -9,7 +9,9 @@
   "author": "sauravraj276",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.9",
     "express": "^4.18.2",
+    "mongoose": "^7.3.1",
     "nodemon": "^2.0.22"
   }
 }
