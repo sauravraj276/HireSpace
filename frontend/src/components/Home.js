@@ -30,8 +30,6 @@ const Home = () => {
                </div>
         </div>
         
-
-
         <ExploreByCategory />
         <FeaturedJob />
           

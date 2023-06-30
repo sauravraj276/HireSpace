@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import "../style/exploreByCategory.css";
-import arrow from "../style/Arrow.png";
+import arrow from "../images/Arrow.svg";
 import icon from "../style/icon-1.png";
 import { Link } from "react-router-dom";
 
