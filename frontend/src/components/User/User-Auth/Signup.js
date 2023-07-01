@@ -1,5 +1,5 @@
 import React from 'react';
-import signup from '../../../images/signup.png';
+import signup from '../../../images/login.png';
 import google from  '../../../images/google.svg';
 import linkedin from  '../../../images/linkedin.svg';
 import '../../../style/signupe.css';

@@ -1,22 +1,38 @@
 import React from 'react';
 import logo from '../images/logo.png';
 import bg from '../images/bg.png'
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import '../style/home.css'
+import { Link, useMatch,BrowserRouter as Router, useResolvedPath } from "react-router-dom";
+import '../style/home.css';
+import FeaturedJob from '../components/FeaturedJob';
+import ExploreByCategory from '../components/ExploreByCategory';
+
 const Home = () => {
     return (
-    // <h1>Jai Shree Ram</h1>
     <>
         <div className="container-home">
-             <div className='left-home'>
-                <img src={bg} className="App-logo" alt='logo' /> 
-            </div> 
-           {/* <div className="right-home">
-                {/* <img src={bg} className="App-logo" alt='logo' />   
-            </div> */}
+            
+               <div className="content-home">
+                <h2>Welcome to Your Hiring <span style={{ color: "#3A90C0" }}>Portal!</span></h2>
+                <p>
+                Connecting exceptional candidates with leading companies.
+                </p>
+                
+                <div className="contain-search">
+                    <div className="search-job-title">
+                    <input type="text" className="form-field form-field-search" name="name" id="name" placeholder="Job-Title" />
+                    </div>
+                    <div className="search-city">
+                    <input type="text" className="form-field form-field-search" name="name" id="name" placeholder="City" />
+                    </div>
+                    <button className='btn-search'>Search Job</button>
+                </div>
 
+               </div>
         </div>
-      
+        
+        <ExploreByCategory />
+        <FeaturedJob />
+          
     </>
     );
 };
