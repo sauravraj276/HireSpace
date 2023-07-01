@@ -1,10 +1,4 @@
-import React ,{useState,useEffect} from "react";
-import {
-  Link,
-  useMatch,
-  BrowserRouter as Router,
-  useResolvedPath,
-} from "react-router-dom";
+import React from "react";
 import "../../style/profile_company.css";
 import "../../style/profilecreate_company.css";
 
@@ -27,4 +21,4 @@ function Companyprofile_creation() {
   )
 }
 
-export default Companyprofile_creation
+export default Companyprofile_creation;
