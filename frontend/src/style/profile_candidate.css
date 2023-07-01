@@ -1,0 +1,81 @@
+@import url('color.css');
+@import url('reset.css');
+@import url('font_styles.css');
+
+.container-candidate{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+   
+    margin-top: 30px;
+}
+.left-profile{
+    float: left;
+    max-width: 400px;
+    margin-left: 20%;
+}
+.left-profile img{
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     object-fit: cover;
+      
+}
+.left-profile h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.desc-profile{
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--C1);
+    border: 2px solid var(--C1);
+    border-radius: 5px;
+}
+
+.right-profile{
+    float: right;
+    margin-right: 30%;
+    max-width: 600px;
+}
+.basic-info-profile{    
+    margin-bottom: 20px;
+    color: var(--C1);
+    border: 2px solid var(--C1);
+    border-radius: 5px;
+}
+.basic-info-profile h1{
+    display: inline;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom:auto;
+    line-height: 1.5cm;
+}
+.education-profile{
+    margin-bottom: 20px;
+    color: var(--C1);
+    border: 2px solid var(--C1);
+    border-radius: 5px;
+}
+.project{
+    margin-bottom: 20px;
+    color: var(--C1);
+    border: 2px solid var(--C1);
+    border-radius: 5px;
+}
+.certificate{
+    margin-bottom: 20px;
+    color: var(--C1);
+    border: 2px solid var(--C1);
+    border-radius: 5px;
+}
+.input-profile{
+    border: 0.5px solid var(--C1);
+    border-radius: 3px;
+    color: var(--C1);
+}

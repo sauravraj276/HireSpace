@@ -12,6 +12,8 @@ import CandidateSignUp from './components/User/User-Auth/Signup';
 import CompanySignUp from './components/Company/Company-auth/SignupE';
 import ProfileCompany from './components/Company/Pofile_company';
 import CompanyProfileCreation from './components/Company/Companyprofile_creation';
+import CandidateProfileCreation from './components/User/Candidateprofile_creation';
+import ProfileCandidate from './components/User/Profile_candidate';
 // import About from './components/About';
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
           <Route path="/CompanySignUp" element={<CompanySignUp />} />
           <Route path="/Profile_company" element={<ProfileCompany />}/>
           <Route path="/Companyprofile_creation" element={<CompanyProfileCreation/>}/>
+          <Route path="/Candidateprofile_creation" element={<CandidateProfileCreation/>}/>
+          <Route path="/Profile_candidate" element={<ProfileCandidate/>}/>
         </Routes>
       </Router>
       
