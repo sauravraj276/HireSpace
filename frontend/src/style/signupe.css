@@ -91,6 +91,7 @@
         margin-left: 2.5px;
         margin-right: 2.5px;
         border-radius: 7px;
+        cursor: pointer;
 }
 .btn-signup:hover{
     background-color: var(--C3);

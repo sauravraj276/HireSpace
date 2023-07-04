@@ -61,8 +61,8 @@
 .post-job{
     background: #fff;
     width: 560px;
-    max-width: 90%;
-    padding: 20px;
+    max-width: 100%;
+    padding: 15px;
     border-radius: 4px;
     position: relative;
     transform: translateY(-100%);
