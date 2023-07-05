@@ -18,8 +18,13 @@
 .profile-candidate h1{
     margin-top: 20px;
     font-size: 32px;
-    color: var(--C1);
+    color: var(--C5);
     font-weight: 600;
+    margin: 10px;
+    padding: 7px;
+    border: 2px solid var(--C14);
+    background-color: var(--C13);
+    border-radius: 5px;
 }
 
 .top-profile{
