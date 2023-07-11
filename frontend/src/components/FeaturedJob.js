@@ -105,6 +105,7 @@ const FeaturedJob = () => {
       type1: "Sales",
       type2: "Negotiation",
     },
+   
   ];
   
   

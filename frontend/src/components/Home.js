@@ -1,7 +1,4 @@
 import React from 'react';
-import logo from '../images/logo.png';
-import bg from '../images/bg.png'
-import { Link, useMatch,BrowserRouter as Router, useResolvedPath } from "react-router-dom";
 import '../style/home.css';
 import FeaturedJob from '../components/FeaturedJob';
 import ExploreByCategory from '../components/ExploreByCategory';
@@ -17,7 +14,7 @@ const Home = () => {
                 Connecting exceptional candidates with leading companies.
                 </p>
                 
-                <div className="contain-search">
+                <div className="contain-search">                   
                     <div className="search-job-title">
                     <input type="text" className="form-field form-field-search" name="name" id="name" placeholder="Job-Title" />
                     </div>

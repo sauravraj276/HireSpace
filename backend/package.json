@@ -9,7 +9,20 @@
   "author": "sauravraj276",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "config": "^3.3.9",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.3.1",
+    "mongosh": "^1.10.1",
+    "node-uuid": "^1.4.8",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "path": "^0.12.7"
   }
 }
