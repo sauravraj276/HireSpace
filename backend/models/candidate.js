@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const CandidateSchema = new mongoose.Schema({
     id: {
-        type: Number,
+        type: String,
         unique: true
     },
     name: {

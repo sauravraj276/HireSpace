@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { check, validationResult } = require("express-validator");
+const { v4: uuidv4 } = require('uuid');
 // const auth = require("../middleware/auth");
 const Candidate = require("../models/candidate");
 
@@ -30,8 +31,9 @@ router.post(
             if (candidate) {
                 return res.status(400).json({ msg: "Candidate already exists" });
             }
-
+            const id=uuidv4();
             candidate = new Candidate({
+                id,
                 name,
                 email,
                 password,
@@ -144,6 +146,7 @@ router.post(
         check("password", "Password is required").exists(),
     ],
     async (req, res) => {
+        console.log(req.body);
 
         
         // Check for validation errors
@@ -162,8 +165,8 @@ router.post(
             }
 
             // Check if the password matches
-            // const isMatch = await bcrypt.compare(password, candidate.password);
-            const isMatch = true;
+            const isMatch = await bcrypt.compare(password, candidate.password);
+            // const isMatch = password==candidate.password?true:false;
             if (!isMatch) {
                 return res.status(400).json({ msg: "Invalid credentials" });
             }
@@ -181,6 +184,7 @@ router.post(
                 { expiresIn: "1h" }, // Set the expiration time as per your requirements
                 (err, token) => {
                     if (err) throw err;
+                    // console.log(token);
                     res.json({ token });
                 }
             );
