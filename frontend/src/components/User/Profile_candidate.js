@@ -2,6 +2,8 @@ import React from 'react'
 import '../../style/profile_candidate.css'
 import img from '../../images/divy.png'
 function Profile_candidate() {
+    
+
   return (
     <>
         <div className="candidate-container">
