@@ -1,53 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
-import {Route, BrowserRouter as Router, Link, Routes} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home'
 import Footer from './components/Footer';
-import FeaturedJob from './components/FeaturedJob';
+// import FeaturedJob from './components/FeaturedJob';
 import Findjobs from './components/Findjobs';
 import BrowseCompany from './components/BrowseCompany';
-import Student from './components/User/User-Auth/Login';
+import Candidate from './components/User/User-Auth/Login';
 import Company from './components/Company/Company-auth/LoginE';
-import StudentSignUp from './components/User/User-Auth/Signup';
+import CandidateSignUp from './components/User/User-Auth/Signup';
 import CompanySignUp from './components/Company/Company-auth/SignupE';
-import ExploreByCategory from './components/ExploreByCategory';
-import About from './components/About';
+import ProfileCompany from './components/Company/Pofile_company';
+import CompanyProfileCreation from './components/Company/Companyprofile_creation';
+import CandidateProfileCreation from './components/User/Candidateprofile_creation';
+import ProfileCandidate from './components/User/Profile_candidate';
+import {AppContextProvider} from './context';
+// import About from './components/About';
 function App() {
 
   return (
-    <div className="App">
-                                   {/* navbar design*/}
-                                   
-      <div className="container">
+    <AppContextProvider>
+      <div className="App">
+        {/* navbar design*/}
         <Router>
-          <Navbar/>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Findjobs" element={<Findjobs />} />
-              <Route path="/BrowseCompany" element={<BrowseCompany />} />
-              <Route path="/Student" element={<Student />} />
-              <Route path="/Company" element={<Company />} />
-              <Route path="/StudentSignUp" element={<StudentSignUp />} />
-              <Route path="/CompanySignUp" element={<CompanySignUp />} />
-            </Routes>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Findjobs" element={<Findjobs />} />
+            <Route path="/BrowseCompany" element={<BrowseCompany />} />
+            <Route path="/Candidate" element={<Candidate />} />
+            <Route path="/Company" element={<Company />} />
+            <Route path="/CandidateSignUp" element={<CandidateSignUp />} />
+            <Route path="/CompanySignUp" element={<CompanySignUp />} />
+            <Route path="/Profile_company" element={<ProfileCompany />} />
+            <Route path="/Companyprofile_creation" element={<CompanyProfileCreation />} />
+            <Route path="/Candidateprofile_creation" element={<CandidateProfileCreation />} />
+            <Route path="/Profile_candidate" element={<ProfileCandidate />} />
+          </Routes>
+        </Router>
+        <Router>
+          <Footer />
         </Router>
       </div>
-      
-      <Router>
-      <ExploreByCategory/>
-      </Router>
+    </AppContextProvider>
 
-      <Router></Router>
-      <Router>
-      <FeaturedJob/>
-      </Router>
-      <Router>
-      <Footer/>
-      </Router>
-      
-
-    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import "../style/exploreByCategory.css";
-import arrow from "../style/Arrow.png";
+import arrow from "../images/Arrow.svg";
 import icon from "../style/icon-1.png";
 import { Link } from "react-router-dom";
 
@@ -80,7 +80,7 @@ const ExploreByCategory = () => {
     <>
     <div className="container0">
       <h3 className="heading1">
-        Explore by<span style={{ color: "#26A4FF" }}> category</span>
+        Explore by<span style={{ color: "#3A90C0" }}> category</span>
       </h3>
       <div className="box-container0">
 
@@ -89,23 +89,24 @@ const ExploreByCategory = () => {
       <>
         <div className="box0" key={curElem.id}>
 
-          <div>
-            <img src={icon} alt="icon" />
-          </div>
+            <div>
+              <img src={icon} alt="icon" />
+            </div>
 
-          <div>
-            <div className="job0">
-              <Link to="#">{curElem.name}</Link>
-            </div>
-          </div>
-        <div className="arrow">
-          <div className="para0">
-            <p>
-            {curElem.number}  {curElem.description}
-            </p>
-            </div>
-            <img src={arrow} alt="icon" />
-        </div>    
+              <div className="job0">
+                <Link to="#">{curElem.name}</Link>
+              </div>
+  
+          <div className="desc">
+                <div className="para0">
+                  <p>
+                  {curElem.number}  {curElem.description}
+                  </p>
+                </div>
+                <div className="arrow">
+                  <img src={arrow} alt="icon" />
+                </div>
+          </div>    
         </div>
 
       </>

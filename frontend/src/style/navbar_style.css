@@ -14,9 +14,9 @@
 .first-section {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 8%;
 }
 
 .logo {
@@ -40,7 +40,8 @@
 .second-section {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
+  margin-right: 8%;
 }
 
 .dropdown {
@@ -57,6 +58,8 @@
   color: var(--C5);
   margin-left: 2.5px;
   margin-right: 2.5px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -67,13 +70,16 @@
   z-index: 1;
   background-color:var(--C15);
   font: var(--t1);
-  text-align: start;
+  text-align: flex-start;
 
 }
 
 .dropdown-content div{
   border-top:solid 2px rgba(0, 0, 0, 0.2);
   padding: 5px;
+}
+.dropdown-content div:hover{
+  background-color:var(--C13); 
 }
 
 .dropdown-content a{

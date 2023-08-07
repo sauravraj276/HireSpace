@@ -1,0 +1,153 @@
+@import url('color.css');
+@import url('reset.css');
+@import url('font_styles.css');
+
+.profile-company{
+    background: var(--C14);
+    height: 100vh;
+}
+.job-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+}
+.btn-job{
+    /* margin-top: 25% ; */
+    width: 400px;
+    cursor: pointer;
+}
+
+.job-second{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top: 2%;
+}
+.job-second p{
+    margin-left: 20%;
+	text-align: start;
+	font-size: 18px;
+	/* position: relative; */
+    padding: 10px 20px;
+	text-transform: capitalize;
+	color: var(--C5);
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--C1);
+	display: block;
+	line-height: 1.5cm;
+
+}
+
+/* post job css */
+
+
+.overlay{
+    position: fixed;
+    left:0;
+    top:0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+.post-job{
+    background: #fff;
+    width: 560px;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all .3s ease-in-out;
+    
+}
+.post-job h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--C1);
+}
+.post-job h3{
+    font-size: 18px;
+    text-align: start;
+    margin-left: 15px;
+    color: var(--C1);
+}
+.form-field-job{
+    width: 45%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: var(--C5);
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 5px;
+}
+.form-field-job0{
+    width: 92%;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.post-job button.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 600;
+    height: 30px;
+    width: 30px;
+    font-size: 32px;
+    background-color: var(--C15);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.post-job button.close:hover{
+    color: var(--C5);
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.overlay.active .post-job{
+    transform: translateY(0px);
+}
+
+.btn-ctrl{
+    margin-top: 2px;
+    margin-bottom: 5px;
+
+}
+
+@media(max-width: 767px){
+    .job-first{
+        display: inline;
+    }
+    .btn-job{
+        margin-top: 2% ;
+        width: max-content;
+        
+    }
+    .job-second p{
+        margin-left: 2%;
+        padding: 5px;
+        line-height: 0.7cm;
+        margin-top: 0;
+    }
+    .form-field-job{
+        width: 70%;
+    }
+} 

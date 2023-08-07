@@ -114,7 +114,7 @@ const FeaturedJob = () => {
     <>
     <div className="container_f">
       <h3 className="heading0">
-        Featured<span style={{ color: "#26A4FF" }}> jobs</span>
+        Featured<span style={{ color: "#3A90C0" }}> jobs</span>
       </h3>
       <div className="box-container_f">
 
