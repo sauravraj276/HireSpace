@@ -40,8 +40,8 @@
 .btn_f{
     float:right;
     font-size: 16px;
-    color: var(--C4);
-    border:5px solid var(--C4);
+    color: var(--C15);
+    border:5px solid var(--C15);
     border-width: thin;
     padding: 5px;
 }

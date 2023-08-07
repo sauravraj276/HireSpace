@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import "../style/exploreByCategory.css";
-import arrow from "../style/Arrow.png";
+import arrow from "../images/Arrow.svg";
 import icon from "../style/icon-1.png";
 import { Link } from "react-router-dom";
 
@@ -80,7 +80,7 @@ const ExploreByCategory = () => {
     <>
     <div className="container0">
       <h3 className="heading1">
-        Explore by<span style={{ color: "#26A4FF" }}> category</span>
+        Explore by<span style={{ color: "#3A90C0" }}> category</span>
       </h3>
       <div className="box-container0">
 

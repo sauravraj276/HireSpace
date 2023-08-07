@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://hirespace:ylsu4EzheLYyb9uh@hirespacecluster.gruyrh8.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken"
+}
