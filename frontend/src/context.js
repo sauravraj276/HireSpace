@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import { isLoggedIn } from './auth/auth';
 
 const AppContext = React.createContext();
 
 export const AppContextProvider = ({ children }) => {
-  const [appData, setAppData] = useState({ isLoggedIn: false });
+  const [appData, setAppData] = useState({ isLoggedIn: false, candidate:null });
 
   useEffect(() => {
     if (localStorage.getItem('token')) {
-      // check the validity of the token inbackend
-      setAppData({ isLoggedIn: true });
+      
+      setAppData({ isLoggedIn: isLoggedIn(),...appData });
     }
   }, []);
 
   const updateAppData = (newValue) => {
-    setAppData({ isLoggedIn: newValue });
+    setAppData({...newValue });
+ 
   };
 
   return (

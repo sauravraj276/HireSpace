@@ -18,7 +18,6 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-
   return (
 
     <header className="navbar" >
@@ -33,6 +32,7 @@ function Navbar() {
       </div>
       <div className="second-section">
         {
+          
           appData.isLoggedIn ?
             <div className='dropdown'>
               <button onClick={() => { logout(); updateAppData(false); Navigate('/'); }} className="dropbtn">LogOut

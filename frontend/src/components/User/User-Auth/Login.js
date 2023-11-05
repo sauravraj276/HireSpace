@@ -33,7 +33,8 @@ function Login() {
         // if response is ok 200
         if (data.status === 200) {
           localStorage.setItem('token', data.data.token);
-          updateAppData(true);
+          // console.log(data.data.candidate);
+          updateAppData({isLoggedIn:true,candidate:{...data.data.candidate}});
           Navigate('/Profile_candidate');
 
         }
