@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-import '../../style/candidateprofile_creation.css'
+import '../../styles/pages/profile.css'
 
 function Candidateprofile_creation() {
 

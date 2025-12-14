@@ -184,8 +184,8 @@ router.post(
                 { expiresIn: "1h" }, // Set the expiration time as per your requirements
                 (err, token) => {
                     if (err) throw err;
-                    // console.log(token);
-                    res.json({ token });
+                  
+                    res.json({ token,candidate });
                 }
             );
         } catch (err) {

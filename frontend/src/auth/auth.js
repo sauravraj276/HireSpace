@@ -30,7 +30,7 @@ export const logout = async () => {
 // Function to check if the user is logged in
 export const isLoggedIn = () => {
   const token = localStorage.getItem('token');
-  console.log(token);
+
   if (token) {
     try {
       const decodedToken = jwtDecode(token);
@@ -38,6 +38,7 @@ export const isLoggedIn = () => {
       // Check if the token is expired
       const currentTime = Date.now() / 1000;
       if (decodedToken.exp < currentTime) {
+        localStorage.clear('token');
         return false;
       } else {
         return true;
