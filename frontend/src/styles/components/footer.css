@@ -74,6 +74,7 @@
 .footer-social {
   display: flex;
   gap: var(--spacing-md);
+  justify-content: center;
 }
 
 .social-link {
@@ -90,6 +91,7 @@
 
 .social-link:hover {
   background-color: var(--color-primary);
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
@@ -122,6 +124,6 @@
   }
 
   .footer-social {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }

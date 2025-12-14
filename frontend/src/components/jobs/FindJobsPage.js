@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SearchBar from "../../components/common/SearchBar";
 import FindjobContent from "../../components/jobs/FindjobContent";
 import "../../styles/pages/find-jobs.css";

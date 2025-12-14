@@ -166,3 +166,35 @@
     font-size: 2rem;
   }
 }
+
+/* Appending specific styles for Contact Button to static-pages.css */
+.contact-btn {
+  width: 50%; /* Full width */
+  margin-top: var(--spacing-md);
+  padding: 16px 32px; /* Taller */
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-radius: 16px; /*Pill shape */
+  background: var(--color-primary);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  color: white; /* Ensure text is white */
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+   background: var(--color-primary);
+}
+
+.contact-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.contact-btn:hover svg {
+  transform: translateX(4px) translateY(-4px); /* Fly away effect */
+}

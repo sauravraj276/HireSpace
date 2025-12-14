@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import { isLoggedIn } from './auth/auth';
+import React, { useEffect, useState } from "react";
+import { isLoggedIn } from "../auth/auth";
 
 const AppContext = React.createContext();
 
 export const AppContextProvider = ({ children }) => {
-  const [appData, setAppData] = useState({ isLoggedIn: false, candidate:null });
+  const [appData, setAppData] = useState({
+    isLoggedIn: false,
+    candidate: null,
+  });
 
   useEffect(() => {
-    if (localStorage.getItem('token')) {
-      
-      setAppData({ isLoggedIn: isLoggedIn(),...appData });
+    if (localStorage.getItem("token")) {
+      setAppData((prev) => ({ ...prev, isLoggedIn: isLoggedIn() }));
     }
   }, []);
 
   const updateAppData = (newValue) => {
-    setAppData({...newValue });
- 
+    setAppData({ ...newValue });
   };
 
   return (

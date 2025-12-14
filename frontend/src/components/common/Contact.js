@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/components/static-pages.css";
-import { Mail, MapPin, Phone, MessageSquare } from "lucide-react";
+import { Mail, MapPin, Phone, MessageSquare, Send } from "lucide-react";
 
 function ContactUs() {
   return (
@@ -72,7 +72,10 @@ function ContactUs() {
                 rows="5"
                 style={{ paddingTop: "10px" }}
               ></textarea>
-              <button className="btn btn-primary">Send Message</button>
+              <button className="btn btn-primary contact-btn">
+                <Send size={20} style={{ marginRight: "10px" }} />
+                Send Message
+              </button>
             </form>
           </div>
         </div>

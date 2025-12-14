@@ -1,4 +1,5 @@
 import React from "react";
+import { Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import navbar_logo from "../assets/logos/navbar_logo.svg";
 import "../styles/components/footer.css";
@@ -60,17 +61,17 @@ const Footer = () => {
               The latest job news, articles, sent to your inbox weekly.
             </p>
             <div className="footer-social">
-              <Link to="#" aria-label="Facebook" className="social-link">
-                <i className="fab fa-facebook-f"></i>
-              </Link>
               <Link to="#" aria-label="Twitter" className="social-link">
-                <i className="fab fa-twitter"></i>
+                <Twitter size={20} />
               </Link>
               <Link to="#" aria-label="Instagram" className="social-link">
-                <i className="fab fa-instagram"></i>
+                <Instagram size={20} />
               </Link>
               <Link to="#" aria-label="LinkedIn" className="social-link">
-                <i className="fab fa-linkedin-in"></i>
+                <Linkedin size={20} />
+              </Link>
+              <Link to="#" aria-label="YouTube" className="social-link">
+                <Youtube size={20} />
               </Link>
             </div>
           </div>
