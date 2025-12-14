@@ -1,8 +1,10 @@
 import React from 'react'
-import '../../styles/pages/profile.css'
-import img from '../../assets/images/divy.png'
+import '../../style/profile_candidate.css'
+import img from '../../images/divy.png'
 function Profile_candidate() {
-    
+
+  const { appData, updateAppData } = useContext(AppContext);
+
 
   return (
     <>
@@ -14,7 +16,7 @@ function Profile_candidate() {
                     <img src={img} alt='profile-pic'></img>
         
                     <label>Name</label>
-                        <p className="input-profile">Divyanshu</p>
+                        <p className="input-profile">{appData.candidate.name}</p>
                     <label>Student/Company</label>
                 
                     <label>Summary</label>
