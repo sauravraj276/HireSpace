@@ -1,6 +1,5 @@
 import React from "react";
-import "../../style/profile_company.css";
-import "../../style/profilecreate_company.css";
+import "../../styles/pages/profile.css";
 
 function Companyprofile_creation() {
   return (

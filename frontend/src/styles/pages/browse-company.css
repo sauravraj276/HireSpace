@@ -1,0 +1,27 @@
+@import '../base/variables.css';
+
+.browse-company-page {
+  min-height: 100vh;
+}
+
+.browse-company-hero {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  color: var(--color-text-white);
+  padding: var(--spacing-3xl) 0;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.browse-company-hero .container {
+  text-align: center;
+}
+
+.companies-section {
+  padding: var(--spacing-3xl) 0;
+  text-align: center;
+}
+
+.coming-soon {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+}
+

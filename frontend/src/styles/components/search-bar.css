@@ -1,0 +1,51 @@
+@import '../base/variables.css';
+
+.search-bar {
+  display: flex;
+  gap: var(--spacing-md);
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  align-items: center;
+}
+
+.search-input-wrapper {
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-bg-light);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  transition: all var(--transition-base);
+}
+
+.search-input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.search-submit {
+  padding: var(--spacing-md) var(--spacing-xl);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-submit {
+    width: 100%;
+  }
+}
+

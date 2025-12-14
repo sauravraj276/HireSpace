@@ -1,0 +1,162 @@
+@import '../base/variables.css';
+
+.findjob-content {
+  padding: var(--spacing-xl) 0;
+}
+
+.findjob-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--spacing-xl);
+}
+
+.findjob-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.findjob-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.findjob-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.findjob-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.job-item {
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-bg-light);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: var(--spacing-lg);
+  align-items: center;
+  transition: all var(--transition-base);
+}
+
+.job-item:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.job-item-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-light);
+  border-radius: var(--radius-md);
+}
+
+.job-item-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.job-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.job-item-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.job-item-title a {
+  color: var(--color-text-primary);
+  transition: color var(--transition-fast);
+}
+
+.job-item-title a:hover {
+  color: var(--color-primary);
+}
+
+.job-item-meta {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.dot-separator {
+  margin: 0 var(--spacing-xs);
+  color: var(--color-text-light);
+}
+
+.job-item-tags {
+  display: flex;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-xs);
+}
+
+.job-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  min-width: 120px;
+}
+
+.job-vacancy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.vacancy-count {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.vacancy-label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .findjob-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .findjob-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-item {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .job-item-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
