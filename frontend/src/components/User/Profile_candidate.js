@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../style/profile_candidate.css'
-import img from '../../images/divy.png'
+import '../../styles/pages/profile.css'
+import img from '../../assets/images/divy.png'
 function Profile_candidate() {
 
   const { appData, updateAppData } = useContext(AppContext);
